@@ -6,19 +6,22 @@ import { useSiteMetadata } from '../../../hooks';
 
 const Author = () => {
   const { author } = useSiteMetadata();
+  const authorHasTwitter = author.contacts.twitter !== '';
 
   return (
     <div className={styles['author']}>
       <p className={styles['author__bio']}>
         {author.bio}
-        <a
-          className={styles['author__bio-twitter']}
-          href={getContactHref('twitter', author.contacts.twitter)}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <strong>{author.name}</strong> on Twitter
-        </a>
+        { authorHasTwitter
+          && <a
+            className={styles['author__bio-twitter']}
+            href={getContactHref('twitter', author.contacts.twitter)}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <strong>{author.name}</strong> on Twitter
+          </a>
+        }
       </p>
     </div>
   );
