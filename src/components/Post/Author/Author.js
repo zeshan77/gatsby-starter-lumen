@@ -13,7 +13,7 @@ const Author = () => {
       <p className={styles['author__bio']}>
         {author.bio}
         { authorHasTwitter
-          && <a
+          ? <a
             className={styles['author__bio-twitter']}
             href={getContactHref('twitter', author.contacts.twitter)}
             rel="noopener noreferrer"
@@ -21,6 +21,7 @@ const Author = () => {
           >
             <strong>{author.name}</strong> on Twitter
           </a>
+          : <div><strong>{author.name}</strong></div>
         }
       </p>
     </div>
