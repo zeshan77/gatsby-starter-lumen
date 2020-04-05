@@ -1,14 +1,14 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://zeshankhattak.com',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'Blog by Zeshan Khattak',
+  subtitle: 'Blog by Zeshan Khattak full stack laravel developer',
   copyright: '© All rights reserved.',
-  disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  disqusShortname: 'zeshankhattak',
+  postsPerPage: 5,
+  googleAnalyticsId: 'UA-58617688-4',
   useKatex: false,
   menu: [
     {
@@ -25,25 +25,15 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Zeshan Khattak',
+    photo: '/zeshan.png',
+    bio: 'Full stack php/js developer, laravel certified, tailwindcss enthusiast and social worker',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'zeshan77@gmail.com',
+      twitter: 'zeshan',
+      github: 'zeshan77',
       rss: '',
-      vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
-      line: '',
-      gitlab: '',
-      weibo: '',
-      codepen: '',
-      youtube: '',
-      soundcloud: '',
+      linkedin: 'zeshankhattak'
     }
   }
 };
